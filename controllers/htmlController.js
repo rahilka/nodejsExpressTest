@@ -47,17 +47,17 @@ module.exports = function(app) {
   app.post('/person', urlencodedParser, function(req, res) {
       res.send('Thank you!');
       //req.body will be added by this middleware
-      console.log('BODY: ', req.body);
-      console.log('firstname: ', req.body.firstname);
-      console.log('lastname: ', req.body.lastname);
+      // console.log('BODY: ', req.body);
+      // console.log('firstname: ', req.body.firstname);
+      // console.log('lastname: ', req.body.lastname);
   });
 
   //post json:
   app.post('/personjson', jsonParser, function(req, res) {
       res.send('Thank you for the JSON data');
-      console.log('BODY: ', req.body);
-      console.log('firstname: ', req.body.firstname);
-      console.log('lastname: ', req.body.lastname);
+      // console.log('BODY: ', req.body);
+      // console.log('firstname: ', req.body.firstname);
+      // console.log('lastname: ', req.body.lastname);
   });
 
 };
