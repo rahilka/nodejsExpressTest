@@ -1,0 +1,52 @@
+<html>
+
+  <head>
+
+    <link href="assets/style.css" type="text/css" rel="stylesheet"/>
+
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <h1>Hello World!</h1>
+
+    <form method="POST" action="/person">
+
+      Firstname: <input type="text" id="firstname" name="firstname" />
+      <br />
+      Lastname: <input type="text" id="lastname" name="lastname" />
+      <br />
+
+      <!-- When we submit this form, the browser takes the typed values into the field
+        using the 'name' and sets up the quesry string IN THE BODY of the request, cos it's post
+        request. For GET requests, the querystrings are into the url -->
+
+      <input type="submit" value="Submit" />
+
+    </form>
+
+    <script>
+
+      // $.ajax({
+      //
+      //   type: "POST",
+      //   url: "/personjson",
+      //   data: JSON.stringify({firstname: "Rahilka", lastname: "Simonova"}),
+      //   dataType: 'json',
+      //   contentType: 'application/json'
+      //
+      // });
+
+      // Here we will send dta converted to json string
+      //we'll create http request, POST, to the url, with the content type
+      //then, NodeJS will get that http requestand fire the function that wil match the url
+      //run it through the middleware which will pull out the body to parse the json
+
+
+    </script>
+
+  </body>
+
+</html>
